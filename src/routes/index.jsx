@@ -8,7 +8,7 @@ import ProductPage from '../pages/product.page'
 import '../assets/css/global.css'
 export default function index() {
   return (
-    <BrowserRouter >
+    <BrowserRouter forceRefresh={true} >
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/products' element={<ProductsPage />} />

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-export default function CategoriesComponent({setSelectedCategory}) {
+export default function CategoriesComponent({selectedCategory,setSelectedCategory}) {
 
   const [categories, setCategories] = useState([])
 
@@ -15,12 +15,12 @@ export default function CategoriesComponent({setSelectedCategory}) {
 
   return (
     <div className='categories-component '>
-       <h5   className='text-gray-100 font-semibold border border-gray-400  py-2 rounded mb-4 px-2 cursor-pointer hover:bg-slate-600 '   
+       <h5    className={`font-semibold border border-gray-400  py-2 rounded mb-4 px-2 cursor-pointer hover:bg-orange-300 hover:text-white "  ${selectedCategory == '' ? 'bg-orange-300 text-white ' : undefined}  ` } 
        onClick={ () => setSelectedCategory('') }  >  All </h5>
-      {categories.map((item, index) => <h5   className='text-gray-100 font-semibold border border-gray-400  py-2 rounded mb-4 px-2 cursor-pointer hover:bg-slate-600 '  key={index} onClick={ () => setSelectedCategory(item) }  >  {item} </h5>)}
+      {categories.map((item, index) => <h5   className={`font-semibold border border-gray-400  py-2 rounded mb-4 px-2 cursor-pointer hover:bg-orange-300 hover:text-white  ${selectedCategory == item  ? 'bg-orange-300 text-white ' : undefined} `} key={index} onClick={ () => setSelectedCategory(item) }  >  {item} </h5>)}
     </div>
   )
 }
 
   
-// writing  category 'all' is not  a correct way
+// category 'all' 
