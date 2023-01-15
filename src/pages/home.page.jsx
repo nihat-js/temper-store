@@ -30,10 +30,10 @@ export default function HomePage() {
       <FilterComponent searchValue={searchValue} setSearchValue={setSearchValue} orderByPrice={orderByPrice} setOrderByPrice={setOrderByPrice} />
       <section className='flex pt-12   '>
         <div className="container mx-auto flex">
-          <div className='w-3/12 pr-8' >
+          <div className='w-3/12 pr-8  ' >
             <CategoriesComponent  selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
           </div>
-          <div className="w-9/12">
+          <div className="w-9/12 ">
             <ProductsComponent products={products} selectedCategory={selectedCategory} searchValue={searchValue} orderByPrice={orderByPrice} />
           </div>
         </div>
