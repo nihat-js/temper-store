@@ -4,8 +4,8 @@ import HomePage from '../pages/home.page'
 import ProductsPage from '../pages/product.page'
 import ProductPage from '../pages/product.page'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../assets/css/global.scss'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import '../assets/css/global.css'
 export default function index() {
   return (
     <BrowserRouter >

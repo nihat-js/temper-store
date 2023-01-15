@@ -5,7 +5,6 @@ import FilterComponent from '../components/filter.component'
 import NavComponent from '../components/nav.component'
 import ProductsComponent from '../components/products.component'
 
-import './home.page.scss'
 
 export default function HomePage() {
 
@@ -26,10 +25,10 @@ export default function HomePage() {
 
 
   return (
-    <div className='home-page'> 
+    <div className='home-page '> 
       <NavComponent />
       <FilterComponent searchValue={searchValue} setSearchValue={setSearchValue} />
-      <section className='layout d-flex my-3'>
+      <section className='layout d-flex my-3  '>
         <div className='left w-25' >
           <CategoriesComponent  setSelectedCategory={setSelectedCategory} />
         </div>
