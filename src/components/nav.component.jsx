@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function NavComponent() {
   return (
-    <nav className='bg-gray-900 text-white py-4' >
+    <nav className='bg-gray-800 text-white py-4' >
       <div className="container mx-auto">
         <div className="flex  justify-between align-center ">
           <h2 className="brand text-3xl hover:text-blue-800"> <Link to='/'>   Temper Store </Link>   </h2>
